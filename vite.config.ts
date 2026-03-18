@@ -4,9 +4,9 @@ import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, '.', '');
+  loadEnv(mode, '.', '');
   return {
-    base: '/juehe/',
+    base: '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
